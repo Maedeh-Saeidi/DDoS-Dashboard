@@ -4,11 +4,9 @@ import MaxVolumesPackets from './components/maxVolumesPackets';
 
 export default function MaxAttackValumes() {
   return (
-    <div className='min-w-[50%] h-auto bg-amber-600 flex flex-row'>
-      <div className='flex flex-row gap-0'>
+    <div className='max-w-[50%] h-auto bg-[#0F172A] flex flex-row'>
         <MaxVolumesBITS/>
         <MaxVolumesPackets/>
-      </div>
     </div>
   )
 }

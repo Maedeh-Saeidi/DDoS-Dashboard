@@ -10,3 +10,6 @@ return await http.get(BASE_URL + "/sum-pps");
 export const request_get_sumlrl = async () => {
 return await http.get(BASE_URL + "/sum-lrl");
 };
+export const request_get_topfivelrl = async () => {
+return await http.get(BASE_URL + "/top-five-lrl");
+};

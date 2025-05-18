@@ -1,4 +1,4 @@
-export type Units = 'P' | 'T' | 'G' | 'M' | 'K';
+import { Units } from "@/types";
 
 export const convertNumbers = (num: number, unit: Units) => {
   switch (unit) {

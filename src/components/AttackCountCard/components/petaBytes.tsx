@@ -6,8 +6,8 @@ export default function PetaBytes() {
   const {data: sumPPSData,isFetching} = useGetSumLrl();
   const sum = sumPPSData?.data?.sum;
   return (
-    <div className='bg-[#0F172A] text-[#FFFFFF] shadow-md w-full  border border-[#1E293B] py-5'>
-      <div className='flex flex-col items-start justify-start p-3'>
+    <div className='bg-[#0F172A] text-[#FFFFFF] shadow-md w-full  border border-[#1E293B] p-5'>
+      <div className='flex flex-col items-start justify-start'>
         <div className='font-medium text-[#78FF97] text-sm pt-1'>
         PETA BYTES
         </div>

@@ -7,7 +7,7 @@ export default function MitigatedAttacks() {
    const count = countChartData?.data?.count;
 
   return (
-    <div className='bg-[#0F172A] text-[#FFFFFF] p-10 shadow-md w-full border border-[#1E293B]'>
+    <div className='bg-[#0F172A] text-[#FFFFFF] p-4 shadow-md w-full border border-[#1E293B]'>
       <div className="flex flex-col items-center justify-center gap-4 font-medium">
         {/* Icon */}
           <div>
