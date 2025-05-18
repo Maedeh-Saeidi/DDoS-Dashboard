@@ -11,7 +11,7 @@ export default function CommonLayouts({title, subTitle, isFetching, maxVolume, m
   volumes:number[],
   volumesUnit: Units }) {
   return (
-    <div className='flex flex-col items-start justify-start gap-4 p-4'>
+    <div className='flex flex-col items-start justify-start gap-6 p-4'>
       <div className='flex flex-row gap-4'>
         {/* passed icon */}
         <div className='flex flex-col items-start justify-start '>
