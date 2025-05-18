@@ -13,3 +13,6 @@ return await http.get(BASE_URL + "/sum-lrl");
 export const request_get_topfivelrl = async () => {
 return await http.get(BASE_URL + "/top-five-lrl");
 };
+export const request_get_timeduration = async () =>{
+    return await http.get(BASE_URL + "/duration");
+};
