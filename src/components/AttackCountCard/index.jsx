@@ -6,7 +6,7 @@ import CumulativeSum from './components/cumulativeSum';
 export default function AttackCountCards() {
 
   return (
-    <div className='min-w-[50%] h-auto bg-amber-600 flex flex-row'>
+    <div className='max-w-[50%] h-auto bg-amber-600 flex flex-row'>
       <MitigatedAttacks />
       <CumulativeSum />
     </div>
