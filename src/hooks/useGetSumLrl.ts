@@ -1,4 +1,4 @@
-import { request_get_sumlrl } from '@/api/requests';
+import { request_get_sumlrl } from '@/app/api/requests';
 import {  useQuery } from '@tanstack/react-query';
 
 export const useGetSumLrl = () => {

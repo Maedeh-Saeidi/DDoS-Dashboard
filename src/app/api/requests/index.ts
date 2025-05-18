@@ -1,5 +1,5 @@
 import { BASE_URL } from "../CONSTANTS";
-import {http} from "@/api/http/http";
+import {http} from "@/app/api/http/http";
 
 export const request_get_countChart = async () => {
     return await http.get(BASE_URL + "/count-chart");
@@ -17,5 +17,5 @@ export const request_get_timeduration = async () => {
     return await http.get(BASE_URL + "/duration");
 };
 export const request_get_chart = async () => {
-    return await http.get("http://156.255.1.102:6523/task/chart")
-}
+    return await http.get('/api/proxy-chart');
+};

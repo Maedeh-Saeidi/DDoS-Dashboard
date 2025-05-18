@@ -1,4 +1,4 @@
-import { request_get_topfivelrl } from '@/api/requests';
+import { request_get_topfivelrl } from '@/app/api/requests';
 import {  useQuery } from '@tanstack/react-query';
 
 export const useGetTopFiveLrl = () => {
