@@ -1,4 +1,5 @@
 import { useGetSumLrl } from '@/hooks/useGetSumLrl';
+import { convertNumbers } from '@/utils';
 import React from 'react';
 
 export default function PetaBytes() {
@@ -15,8 +16,8 @@ export default function PetaBytes() {
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#78FF97] flex items-center justify-center text-sm font-medium">
               </div>
             ) : sum != null ? (
-              <div className='text-2xl font-bold text-[#FFFFFF]'>
-                {sum}
+              <div className='text-5xl font-bold text-[#FFFFFF]'>
+                {convertNumbers(sum, "P")}
               </div>
             ) : (
               <div className='text-sm text-red-500'>
@@ -25,9 +26,9 @@ export default function PetaBytes() {
             )}
           </div>
         <div className="font-normal text-lg text-[#6B707E] pt-3 leading-7">
-            Total Number of <span className="underline">Dropped Bytes </span>
+            Total Number of <span className="block underline">Dropped Bytes </span>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

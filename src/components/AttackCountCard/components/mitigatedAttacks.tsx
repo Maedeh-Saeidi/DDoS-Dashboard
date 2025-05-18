@@ -15,7 +15,7 @@ export default function MitigatedAttacks() {
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#78FF97] flex items-center justify-center text-sm font-medium">
               </div>
             ) : count != null ? (
-              <div className='text-4xl font-bold text-[#78FF97]'>
+              <div className='text-5xl font-bold text-[#78FF97]'>
                 {count}
               </div>
             ) : (
@@ -24,7 +24,7 @@ export default function MitigatedAttacks() {
               </div>
             )}
           </div>
-          <div className="text-lg text-white font-normal">
+          <div className="text-xl text-white font-normal">
             Number Of <span className="underline text-[#504CA6]">Mitigated</span> Attacks
           </div>
       </div>

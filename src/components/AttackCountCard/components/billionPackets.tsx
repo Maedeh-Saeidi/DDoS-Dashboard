@@ -1,5 +1,6 @@
 import React from 'react';
-import { useGetSumPPS } from '@/hooks/useGetSumpps';
+import { useGetSumPPS } from '@/hooks/useGetSumPPS';
+import { convertNumbers } from '@/utils';
 
 export default function BillionPackets() {
   const {data: sumPPSData,isFetching} = useGetSumPPS();
@@ -15,8 +16,8 @@ export default function BillionPackets() {
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#78FF97] flex items-center justify-center text-sm font-medium">
               </div>
             ) : sum != null ? (
-              <div className='text-2xl font-bold text-[#FFFFFF] '>
-                {sum}
+              <div className='text-5xl font-bold text-[#FFFFFF] '>
+                {convertNumbers(sum, "G")}
               </div>
             ) : (
               <div className='text-sm text-red-500'>
@@ -25,9 +26,9 @@ export default function BillionPackets() {
             )}
           </div>
         <div className="font-normal text-lg text-[#6B707E] pt-3 leading-7">
-            Total Number of <span className="underline">Dropped Packets </span> Attacks
+            Total Number of <span className="block underline">Dropped Packets </span>
         </div>
       </div>
     </div>
-  )
+  );
 };

@@ -1,8 +1,8 @@
 "use client"
 
-import AttackCountCards from "@/components/AttackCountCard";
+import AttackCountCards from "@/components/AttackCountCard/index";
 import TrafficFlowChart from "@/components/trafficFlowChart";
-import MaximumAttacksValumes from "@/components/maximumAttacksValumes";
+import MaxAttackValumes from "@/components/MaxAttackValumes";
 import MaximumAttackDurtion from "@/components/maximumAttackDurtion";
 
 export default function DashboardPage() {
@@ -17,8 +17,8 @@ export default function DashboardPage() {
       </p>
       <div className="flex flex-row flex-wrap justify-start pt-10">
       <AttackCountCards/>
+      <MaxAttackValumes/>
       <TrafficFlowChart/>
-      <MaximumAttacksValumes/>
       <MaximumAttackDurtion/>
          </div>
     </main>
