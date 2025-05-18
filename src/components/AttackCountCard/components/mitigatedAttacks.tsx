@@ -1,14 +1,12 @@
-import { useGetCountCharts } from '@/hooks/useGetCountChart';
 import React from 'react';
+import { useGetCountCharts } from '@/hooks/useGetCountChart';
 
-export default function AttackCountCards() {
-
-  const {data: countChartData,isFetching} = useGetCountCharts();;
+export default function MitigatedAttacks() {
+ 
+ const {data: countChartData,isFetching} = useGetCountCharts();
    const count = countChartData?.data?.count;
 
   return (
-    <div className='min-w-[50%] h-auto bg-amber-600'>
-      <div className="bg-[#0F172A] text-[#FFFFFF] p-10 shadow-md w-full max-w-xs border border-[#1E293B]">
       <div className="flex flex-col items-center justify-center gap-4 font-weight-400">
         {/* Icon */}
           <div>
@@ -29,7 +27,5 @@ export default function AttackCountCards() {
             Number Of <span className="underline text-[#504CA6]">Mitigated</span> Attacks
           </div>
       </div>
-    </div>
-    </div>
   )
 }

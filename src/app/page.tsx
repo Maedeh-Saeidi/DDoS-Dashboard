@@ -1,6 +1,6 @@
 "use client"
 
-import AttackCountCards from "@/components/attackCountCards";
+import AttackCountCards from "@/components/AttackCountCard";
 import TrafficFlowChart from "@/components/trafficFlowChart";
 import MaximumAttacksValumes from "@/components/maximumAttacksValumes";
 import MaximumAttackDurtion from "@/components/maximumAttackDurtion";
