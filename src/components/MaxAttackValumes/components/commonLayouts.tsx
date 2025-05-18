@@ -1,15 +1,8 @@
 import React from 'react';
 import { convertNumbers } from '@/utils';
-import { Units } from '@/types';
+import {CommonLayoutsProps} from '@/types';
 
-export default function CommonLayouts({title, subTitle, isFetching, maxVolume, maxUnit,volumes, volumesUnit }:{
-  title:string,
-  subTitle:string,
-  isFetching:boolean,
-  maxVolume:number | null,
-  maxUnit:Units,
-  volumes:number[],
-  volumesUnit: Units }) {
+export default function CommonLayouts({title, subTitle, isFetching, maxVolume, maxUnit,volumes, volumesUnit }:CommonLayoutsProps) {
   return (
     <div className='flex flex-col items-start justify-start gap-6 p-4'>
       <div className='flex flex-row gap-4'>
