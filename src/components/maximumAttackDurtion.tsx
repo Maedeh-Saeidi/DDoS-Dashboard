@@ -3,20 +3,19 @@ import { convertMsToTime } from '@/utils';
 import React from 'react';
 
 export default function MaximumAttackDurtion() {
-  const {data: duration, isPending} = useGetTimeDuration();
+  const {data: duration, isFetching} = useGetTimeDuration();
   const durationInMs = duration?.data?.duration;
   const { days, hours, minutes } = convertMsToTime(durationInMs || 0);
   const timeItems = [
-    { label: 'DAYS', value: isPending ? '--' : days },
-    { label: 'HOURS', value: isPending ? '--' : hours },
-    { label: 'MINUTES', value: isPending ? '--' : minutes },
+    { label: 'DAYS', value: isFetching ? '--' : days },
+    { label: 'HOURS', value: isFetching ? '--' : hours },
+    { label: 'MINUTES', value: isFetching ? '--' : minutes },
   ];
 
   return (
-    <div className='min-w-[44%] max-w-[45%] flex flex-row gap-5  bg-[#0F172A] p-5 border border-[#1E293B]'>
-      {/* search svg  */} 
+    <div className='max-h-[14vh] min-w-[44%] max-w-[45%] flex flex-row gap-5  bg-[#0F172A] p-5 border border-[#1E293B]'>
+      {/* search svg */} 
      <div className='flex flex-row justify-center align-center gap-10'>
-      {/* clock */}
       <div className="flex justify-center align-center gap-3">
         {timeItems.map((item, index) => (
         <div className='flex flex-col gap-0 justify-center align-center text-center' key={index}>
@@ -29,7 +28,6 @@ export default function MaximumAttackDurtion() {
         </div>
         ))}
       </div>
-      {/* text */}
        <div className='flex flex-col justify-center'>
         <div className='text-[#78FF97] font-medium text-2xl'>Maximum <span className='block text-[#FFFFFF]'> Attack Duration</span>
         </div>
