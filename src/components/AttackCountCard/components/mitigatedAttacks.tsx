@@ -1,5 +1,6 @@
 import React from 'react';
 import { useGetCountCharts } from '@/hooks/useGetCountChart';
+import ImproveIcon from "@/assets/icons/improveIcon.svg";
 
 export default function MitigatedAttacks() {
  
@@ -7,15 +8,15 @@ export default function MitigatedAttacks() {
    const count = countChartData?.data?.count;
 
   return (
-    <div className='bg-[#0F172A] text-[#FFFFFF] p-4 shadow-md w-full border border-[#1E293B]'>
-      <div className="flex flex-col items-center justify-center gap-4 font-medium">
-        {/* Icon */}
+    <div className='bg-[#0F172A] text-[#FFFFFF] p-4 shadow-md w-full border border-[#1E293B] flex justify-center align-center'>
+      <div className="flex flex-col items-center justify-center gap-5 font-medium">
+       <ImproveIcon />
           <div>
             {isFetching ? (
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#78FF97] flex items-center justify-center text-sm font-medium">
               </div>
             ) : count != null ? (
-              <div className='text-5xl font-bold text-[#78FF97]'>
+              <div className='text-5xl font-medium text-[#78FF97]'>
                 {count}
               </div>
             ) : (
