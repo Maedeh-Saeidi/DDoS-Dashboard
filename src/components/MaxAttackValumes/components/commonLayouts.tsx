@@ -2,11 +2,11 @@ import React from 'react';
 import { convertNumbers } from '@/utils';
 import {CommonLayoutsProps} from '@/types';
 
-export default function CommonLayouts({title, subTitle, isFetching, maxVolume, maxUnit,volumes, volumesUnit }:CommonLayoutsProps) {
+export default function CommonLayouts({title, subTitle, isFetching, maxVolume, maxUnit,volumes, volumesUnit,icon }:CommonLayoutsProps) {
   return (
     <div className='flex flex-col items-start justify-start gap-6 p-4'>
       <div className='flex flex-row gap-4'>
-        {/* passed icon */}
+        <div className="w-12 h-12">{icon}</div>
         <div className='flex flex-col items-start justify-start '>
           <div className='font-semibold text-[#FFFFFF] text-2xl pt-1'>
             {title}

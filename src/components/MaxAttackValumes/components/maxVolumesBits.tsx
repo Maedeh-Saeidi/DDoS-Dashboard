@@ -1,5 +1,6 @@
 import React from 'react';
 import { useGetTopFiveLrl } from '@/hooks/useGetTopFiveLrl';
+import Bits from "@/assets/icons/bits.svg";
 import CommonLayouts from './commonLayouts';
 
 export default function MaxVolumesBITS() {
@@ -26,6 +27,7 @@ export default function MaxVolumesBITS() {
         maxUnit='G'
         volumes={volumesWithoutMax}
         volumesUnit='G'
+        icon={<Bits className="w-15 h-15" />}
       />
     </div>
   )

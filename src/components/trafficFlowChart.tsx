@@ -45,7 +45,7 @@ export default function TrafficFlowChart() {
   };
 
   return (
-    <div className="min-w-[50%] min-h-[50vh] h-[50vh] bg-[#0F172A] flex flex-col p-6">
+    <div className="min-w-[44%] max-w-[45%] min-h-[50vh] h-[50vh] bg-[#0F172A] flex flex-col p-6">
       <div className="flex flex-row justify-between items-center mb-4">
         <div className="font-semibold text-2xl">Traffic Flow Chart</div>
         <div className="flex items-center space-x-4">

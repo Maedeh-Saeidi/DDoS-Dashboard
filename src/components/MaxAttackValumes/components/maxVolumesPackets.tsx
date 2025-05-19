@@ -1,5 +1,6 @@
 import React from 'react';
 import CommonLayouts from './commonLayouts';
+import Packets from "@/assets/icons/packets.svg";
 
 export default function MaxVolumesPackets() {
 
@@ -27,6 +28,7 @@ const maxVolume: number = 136500000000
         maxUnit='G'
         volumes={fakeVolumes}
         volumesUnit='G'
+        icon={<Packets className="w-15 h-15"/>}
       />
     </div>
   )

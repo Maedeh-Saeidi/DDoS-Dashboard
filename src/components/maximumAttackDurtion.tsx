@@ -1,5 +1,6 @@
 import { useGetTimeDuration } from '@/hooks/useGetTimeDuration';
 import { convertMsToTime } from '@/utils';
+import SearchIcon from "@/assets/icons/search.svg";
 import React from 'react';
 
 export default function MaximumAttackDurtion() {
@@ -13,9 +14,11 @@ export default function MaximumAttackDurtion() {
   ];
 
   return (
-    <div className='max-h-[14vh] min-w-[44%] max-w-[45%] flex flex-row gap-5  bg-[#0F172A] p-5 border border-[#1E293B]'>
-      {/* search svg */} 
-     <div className='flex flex-row justify-center align-center gap-10'>
+    <div className='max-w-[45%] max-h-[12vh] min-w-[44%] flex flex-row gap-30  bg-[#0F172A] p-5 border border-[#1E293B]'>
+    <div className='pl-[5%]'>
+      <SearchIcon />
+    </div>
+     <div className='flex flex-row justify-center align-center gap-15'>
       <div className="flex justify-center align-center gap-3">
         {timeItems.map((item, index) => (
         <div className='flex flex-col gap-0 justify-center align-center text-center' key={index}>
@@ -28,7 +31,7 @@ export default function MaximumAttackDurtion() {
         </div>
         ))}
       </div>
-       <div className='flex flex-col justify-center'>
+       <div className='min-w-[50%] flex flex-col justify-center pt-3'>
         <div className='text-[#78FF97] font-medium text-2xl'>Maximum <span className='block text-[#FFFFFF]'> Attack Duration</span>
         </div>
       </div>

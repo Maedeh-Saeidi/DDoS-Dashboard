@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 export type Units = 'P' | 'T' | 'G' | 'M' | 'K';
 
 export type CommonLayoutsProps = {
@@ -7,7 +8,8 @@ export type CommonLayoutsProps = {
   maxVolume:number | null,
   maxUnit:Units,
   volumes:number[],
-  volumesUnit: Units 
+  volumesUnit: Units,
+  icon: ReactNode;  
 };
 
 export type RawDataItem = {
